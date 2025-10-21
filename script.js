@@ -9,7 +9,7 @@ const cells = document.querySelectorAll(".cell");
 
 let player1, player2;
 let currentPlayer;
-let currentSymbol = "X";
+let currentSymbol = "x";
 let board = Array(9).fill("");
 let gameOver = false;
 
@@ -52,7 +52,7 @@ cells.forEach((cell) => {
 
     // Switch turns
     currentPlayer = currentPlayer === player1 ? player2 : player1;
-    currentSymbol = currentSymbol === "X" ? "O" : "X";
+    currentSymbol = currentSymbol === "x" ? "o" : "x";
     messageDiv.textContent = `${currentPlayer}, you're up`;
   });
 });

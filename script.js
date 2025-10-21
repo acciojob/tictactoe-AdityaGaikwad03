@@ -1,5 +1,5 @@
-const player1Input = document.getElementById("player-1");
-const player2Input = document.getElementById("player-2");
+const player1Input = document.getElementById("player1");
+const player2Input = document.getElementById("player2");
 const submitBtn = document.getElementById("submit");
 
 const playerInputSection = document.getElementById("player-input");
@@ -38,7 +38,7 @@ cells.forEach((cell) => {
     const winningCombo = checkWinner();
     if (winningCombo) {
       highlightWinner(winningCombo);
-      messageDiv.textContent = `${currentPlayer}, congratulations you won!`;
+      messageDiv.textContent = `${currentPlayer} congratulations you won!`;
       gameOver = true;
       return;
     }
